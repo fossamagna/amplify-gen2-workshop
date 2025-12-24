@@ -22,7 +22,7 @@ workshop template for amplify gen2
 - Kiro CLI の認証設定
 - GitHub Codespaces での環境構築
 
-### 2. Todo アプリ開発 ([docs/2_todo アプリ.md](docs/2_todoアプリ.md))
+### 2. Todo アプリ開発 ([docs/2\_アプリ作成.md](docs/2_アプリ作成.md))
 
 - Vite + React + TypeScript のセットアップ
 - Amplify Sandbox の起動と開発
