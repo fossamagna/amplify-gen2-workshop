@@ -1,13 +1,12 @@
-# hosting
+# ホスティング
 
-todo アプリを hosting します。
+Todo アプリをホスティングします。
 
 ## 下準備
 
 ### ディレクトリの整理
 
-`todo-app`以下の内容をルート以下に移動させます。
-Amplify
+`todo-app` 以下の内容をルート以下に移動させます。
 
 ```shell
 mv todo-app/* .
@@ -16,7 +15,7 @@ mv ./todo-app/.amplify/ .
 rm -rf todo-app/
 ```
 
-Amplify Hosting 用の設定を自動検出させるために必要な作業です。
+この作業は、Amplify Hosting 用の設定を自動検出させるために必要です。
 
 修正をコミットしておきましょう。
 
@@ -27,28 +26,28 @@ Amplify Hosting 用の設定を自動検出させるために必要な作業で�
 ```shell
 kiro-cli
 >
-npm run buildでビルドエラーを解消してください。
+npm run build でビルドエラーを解消してください。
 ```
 
 修正があれば、忘れずにコミットしておきましょう。
 
 ## デプロイ設定
 
-Amplify Hosting のマネコン上でデプロイ設定していきます。
+Amplify Hosting のマネジメントコンソールでデプロイ設定を行います。
 
-1. [マネコンページ](https://us-east-1.console.aws.amazon.com/amplify/apps)にアクセス
+1. [マネジメントコンソール](https://us-east-1.console.aws.amazon.com/amplify/apps)にアクセス
 2. `アプリケーションをデプロイ` をクリック
-3. Git プロバイダーとして GitHub を選択し、次をクリック
-4. 別ウインドウが立ち上がるので、`Authorize AWS Amplify (us-east-1)` をクリック
-5. GitHub の個人組織を選択し、`Only select repositories` で作成したレポジトリを選択し Install をクリック
-6. リポジトリとブランチを追加にて作成したレポジトリを選択し、次をクリック
-7. アプリケーションの設定が自動検出されているはずなので、そのまま次をクリック
-8. デプロイをクリック
+3. Git プロバイダーとして GitHub を選択し、「次へ」をクリック
+4. 別ウィンドウが立ち上がるので、`Authorize AWS Amplify (us-east-1)` をクリック
+5. GitHub の個人組織を選択し、`Only select repositories` で作成したリポジトリを選択して「Install」をクリック
+6. 「リポジトリとブランチを追加」で作成したリポジトリを選択し、「次へ」をクリック
+7. アプリケーションの設定が自動検出されているので、そのまま「次へ」をクリック
+8. 「デプロイ」をクリック
 
-`デプロイ済み`と表示されれば、OK です。
-ドメインと表示されている下の URL にアクセスして、実装した Todo アプリが表示されれば完成です。
+`デプロイ済み` と表示されれば完了です。
+「ドメイン」と表示されている下の URL にアクセスして、実装した Todo アプリが表示されれば完成です。
 
 > [!NOTE]
 >
-> sandbox 環境とは別のアプリケーションです。
+> Sandbox 環境とは別のアプリケーションです。
 > ユーザーや作成したデータは引き継がれませんので、ご注意ください。
